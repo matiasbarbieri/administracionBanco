@@ -25,12 +25,9 @@ class Habitacion(models.Model):
         return f"Habitación {self.numero_habitacion}"
 
 class Reserva(models.Model):
-    reserva_id = models.IntegerField(primary_key=True)
-    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
-    habitacion = models.ForeignKey(Habitacion, on_delete=models.CASCADE)
     fecha_entrada = models.DateField()
     fecha_salida = models.DateField()
     total_pagar = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return f"Reserva #{self.reserva_id} - {self.cliente} - {self.habitacion}"
+        return f"Reserva - Entrada: {self.fecha_entrada}, Salida: {self.fecha_salida}"

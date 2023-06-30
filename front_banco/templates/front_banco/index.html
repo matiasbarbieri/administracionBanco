@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle de Reserva</title>
+</head>
+<body>
+    <h1>Detalle de Reserva</h1>
+
+    <h2>Cliente</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de Documento</th>
+            <th>Número de Documento</th>
+            <th>CUIT/CUIL</th>
+            <th>Dirección</th>
+            <th>Localidad</th>
+        </tr>
+        <tr>
+            <td>{{ cliente.nombre }}</td>
+            <td>{{ cliente.apellido }}</td>
+            <td>{{ cliente.tipo_documento }}</td>
+            <td>{{ cliente.numero_documento }}</td>
+            <td>{{ cliente.cuit_cuil }}</td>
+            <td>{{ cliente.direccion }}</td>
+            <td>{{ cliente.localidad }}</td>
+        </tr>
+    </table>
+
+    <h2>Habitación</h2>
+    <table>
+        <tr>
+            <th>ID de Habitación</th>
+            <th>Número de Habitación</th>
+            <th>Capacidad</th>
+            <th>Número de Camas</th>
+            <th>Ubicación</th>
+            <th>Detalle</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>{{ habitacion.habitacion_id }}</td>
+            <td>{{ habitacion.numero_habitacion }}</td>
+            <td>{{ habitacion.capacidad }}</td>
+            <td>{{ habitacion.numero_camas }}</td>
+            <td>{{ habitacion.ubicacion }}</td>
+            <td>{{ habitacion.detalle }}</td>
+            <td>{{ habitacion.precio }}</td>
+        </tr>
+    </table>
+
